@@ -12,7 +12,7 @@ class Rectangle {
 	}
 
 	getArea(){
-		retun this.width * this.height;
+		return this.width * this.height;
 	}
 }
 
