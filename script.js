@@ -1,10 +1,10 @@
 //complete this code
 class Rectangle {
 	constructor(width , height) {
-		width = this.width;
-		height = this.height;
+		 this.width = width;
+		this.height = height;
 	}
-	get myiWdth(){
+	get myWidth(){
 		return this.width;
 	}
 	get myHeight(){
@@ -19,11 +19,12 @@ class Rectangle {
 class Square extends Rectangle {
 
 	constructor(side){
-		super(side);
+		super(side , side);
+			 this.side = side;
 		
 	}
-	getPerimeter(side){
-		return this.side * this.side
+	getPerimeter(){
+		return 4 * this.side
 		
 	}
 }
@@ -31,3 +32,4 @@ class Square extends Rectangle {
 // Do not change the code below this line
 window.Rectangle = Rectangle;
 window.Square = Square;
+
